@@ -1,0 +1,37 @@
+[
+  {
+    "TopicTagId": 1,
+    "TopicTag": "Features",
+    "Position": 1
+  },
+  {
+    "TopicTagId": 2,
+    "TopicTag": "Home",
+    "Position": 2
+  },
+  {
+    "TopicTagId": 3,
+    "TopicTag": "Money",
+    "Position": 3
+  },
+  {
+    "TopicTagId": 4,
+    "TopicTag": "Bills",
+    "Position": 5
+  },
+  {
+    "TopicTagId": 5,
+    "TopicTag": "Mortgage",
+    "Position": 4
+  },
+  {
+    "TopicTagId": 6,
+    "TopicTag": "Travel",
+    "Position": 7
+  },
+  {
+    "TopicTagId": 7,
+    "TopicTag": "Car",
+    "Position": 6
+  }
+]

@@ -1,6 +1,12 @@
 <div>
     <h2>Ranking</h2>
     <select (change)="onChange($event)">
-    <option *ngFor="#t of type">{{t.Name}}</option>
+    <option *ngFor="#t of opt">{{t.Name}}</option>
     </select>
+</div>
+
+<div>
+    <ul>
+        <li *ngFor="#c of cat">{{c.TopicTag}}</li>
+    </ul>
 </div>

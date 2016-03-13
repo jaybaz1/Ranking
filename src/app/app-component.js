@@ -1,35 +1,47 @@
 import {Component, View, OnInit, Input} from 'angular2/core';
 import { HTTP_PROVIDERS } from 'angular2/http';
-import { TypeService } from '/app/type/type-service';
+import { DataService } from '/app/data/data-service';
 
 @Component({
   selector: 'main',
-  providers:[HTTP_PROVIDERS, TypeService],
+  providers:[HTTP_PROVIDERS],
   templateUrl: '/app/app-component.html'
 })
 
 export class AppComponent {
+
+    static get parameters(){
+        return [[DataService]];
+    }
     
-     constructor(typeService: TypeService){
-         
-         typeService.types
+    constructor(dataService){
+        this._dataService = dataService;
+    }
+        
+    ngOnInit(){
+        console.log('APP Init');
+        this.getOptions();
+    }
+
+    getOptions(){
+        console.log('Init Options');
+        
+        this._dataService.getOptions
             .subscribe(
-                type => this.type = type,
-                console.error, 
-                () => console.log('Completed')
-         );
-     } 
+                opt => this.opt = opt
+         )
+    }
      
-     onChange(test){
-         console.log(test.target.selectedIndex + 1);
+     onChange(selection){
+         if(selection === 1){
+             
+         }
+         else{
+            this._dataService.getCategories
+                .subscribe(
+                    cat => this.cat = cat
+             )
+         } 
      }
-     
-     getCategories(){
-         this.typeService.categories
-            .subscribe(
-                cat => this.cat = cat,
-                console.error, 
-                () => console.log('Completed')
-         );
-     }
+
 }  
