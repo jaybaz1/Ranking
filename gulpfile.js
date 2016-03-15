@@ -37,7 +37,8 @@ gulp.task('dependencies', function () {
     'node_modules/angular2/bundles/http.js',
     'node_modules/rxjs/bundles/Rx.js',
     'node_modules/es6-shim/es6-shim.min.js',
-    'node_modules/es6-shim/es6-shim.map'
+    'node_modules/es6-shim/es6-shim.map',
+    'node_modules/dragula/dragula.js'  
   ])
     .pipe(gulp.dest('build/lib'));
 });

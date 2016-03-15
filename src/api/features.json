@@ -1,0 +1,47 @@
+{
+  "Id": 1,
+  "SiteId": 1,
+  "Type": 1,
+  "Name": "Featured Contents",
+  "Slug": "RankedFeaturedContents",
+  "RequiredItems": 4,
+  "IsEnabled": true,
+  "Rankings": [
+    {
+      "Id": 1,
+      "RankingTableId": 1,
+      "Object": {
+        "Id": 300,
+        "Name": "I am awesome"
+      },
+      "Rank": 1
+    },
+    {
+      "Id": 2,
+      "RankingTableId": 1,
+      "Object": {
+        "Id": 7013,
+        "Name": "test article "
+      },
+      "Rank": 2
+    },
+    {
+      "Id": 3,
+      "RankingTableId": 1,
+      "Object": {
+        "Id": 7260,
+        "Name": "Luke's Awesome Guide"
+      },
+      "Rank": 3
+    },
+    {
+      "Id": 4,
+      "RankingTableId": 2,
+      "Object": {
+        "Id": 600,
+        "Name": "Luke's Awesome Gallery"
+      },
+      "Rank": 4
+    }
+  ]
+}

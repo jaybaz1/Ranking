@@ -11,14 +11,9 @@ export class DataService {
         
         this.getCategories = _http.get('/api/categories.json')
             .map(response => response.json());
-    }
-    
-
-    
-    /*  
-    this.setCat = http.get('/api/categories.json')
-      .map(response => response.json()); 
-    */
-    
+        
+        this.getFeatures = _http.get('/api/features.json')
+            .map(response => response.json());
+    } 
 }  
-  
+    

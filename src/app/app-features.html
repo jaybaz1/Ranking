@@ -1,0 +1,20 @@
+
+<h3>Features</h3>
+
+<form>
+    <input type="checkbox" [checked]="isEnabled">
+    
+    <input type="text" [(ngModel)]="searchPhase">
+    <ul>
+        <li></li>
+    </ul>
+</form>
+
+<div>
+    <ul>
+        <!-- <li *ngFor="#feature of features.Rankings">{{feature.Rank}}</li> -->
+        <li>{{features}}</li>
+    </ul>
+</div> 
+
+<button>Save</button>
